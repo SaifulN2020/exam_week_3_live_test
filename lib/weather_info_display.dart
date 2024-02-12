@@ -22,6 +22,14 @@ class _WeatherInfoDisplayState extends State<WeatherInfoDisplay> {
                   itemBuilder:(context,index){
                     return const ListTile(
                       title: Text("City : New York",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
+                      subtitle: Column(
+                        children: [
+                          Text("Tempature : 40"),
+                          Text("Condition :"),
+                          Text("Huminity :"),
+                          Text("WindSpeed")
+                        ],
+                      ),
 
                     );
                   } )
